@@ -1,0 +1,83 @@
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #f8fafc;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.moves {
+  margin: 0;
+  font-weight: 800;
+  color: #334155;
+}
+
+.cleared {
+  margin: 0;
+  color: #16a34a;
+  font-weight: 900;
+  animation: pop 0.25s ease-out;
+}
+
+.button,
+.primaryButton {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.button {
+  background: #111827;
+}
+
+.button:hover:not(:disabled) {
+  background: #374151;
+}
+
+.primaryButton {
+  background: #2563eb;
+}
+
+.primaryButton:hover {
+  background: #1d4ed8;
+}
+
+.button:active:not(:disabled),
+.primaryButton:active {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
