@@ -8,7 +8,7 @@
 
 ## Demo
 
-Coming soon.
+https://sokoban-flax.vercel.app
 
 ## Screenshots
 
